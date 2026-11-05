@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1440">
+<title>Style guide – Gabarit Activis ACSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: hsl(211 66% 40%);
+  --primary-ultra-light: hsl(211 66% 95%);
+  --primary-light: hsl(211 66% 85%);
+  --primary-semi-light: hsl(211 66% 70%);
+  --primary-semi-dark: hsl(211 66% 35%);
+  --primary-dark: hsl(211 66% 22%);
+  --primary-ultra-dark: hsl(211 66% 10%);
+  --primary-hover: hsl(211 66% 32%);
+  --secondary: hsl(200 67% 55%);
+  --secondary-ultra-light: hsl(200 67% 95%);
+  --secondary-light: hsl(200 67% 85%);
+  --secondary-semi-light: hsl(200 67% 70%);
+  --secondary-semi-dark: hsl(200 67% 35%);
+  --secondary-dark: hsl(200 67% 22%);
+  --secondary-ultra-dark: hsl(200 67% 10%);
+  --secondary-hover: hsl(200 67% 47%);
+  --tertiary: hsl(47 99% 50%);
+  --tertiary-ultra-light: hsl(47 99% 95%);
+  --tertiary-light: hsl(47 99% 85%);
+  --tertiary-semi-light: hsl(47 99% 70%);
+  --tertiary-semi-dark: hsl(47 99% 35%);
+  --tertiary-dark: hsl(47 99% 22%);
+  --tertiary-ultra-dark: hsl(47 99% 10%);
+  --tertiary-hover: hsl(47 99% 42%);
+  --accent: hsl(334 100% 82%);
+  --accent-ultra-light: hsl(334 100% 95%);
+  --accent-light: hsl(334 100% 85%);
+  --accent-semi-light: hsl(334 100% 70%);
+  --accent-semi-dark: hsl(334 100% 35%);
+  --accent-dark: hsl(334 100% 22%);
+  --accent-ultra-dark: hsl(334 100% 10%);
+  --accent-hover: hsl(334 100% 74%);
+  --base: hsl(0 1% 15%);
+  --base-ultra-light: hsl(0 1% 95%);
+  --base-light: hsl(0 1% 85%);
+  --base-semi-light: hsl(0 1% 70%);
+  --base-semi-dark: hsl(0 1% 35%);
+  --base-dark: hsl(0 1% 22%);
+  --base-ultra-dark: hsl(0 1% 10%);
+  --base-hover: hsl(0 1% 23%);
+  --neutral: hsl(0 0% 9%);
+  --neutral-ultra-light: hsl(0 0% 95%);
+  --neutral-light: hsl(0 0% 85%);
+  --neutral-semi-light: hsl(0 0% 70%);
+  --neutral-semi-dark: hsl(0 0% 35%);
+  --neutral-dark: hsl(0 0% 22%);
+  --neutral-ultra-dark: hsl(0 0% 10%);
+  --neutral-hover: hsl(0 0% 17%);
+  --success: hsl(133 61% 41%);
+  --success-ultra-light: hsl(133 61% 95%);
+  --success-light: hsl(133 61% 85%);
+  --success-semi-light: hsl(133 61% 70%);
+  --success-semi-dark: hsl(133 61% 35%);
+  --success-dark: hsl(133 61% 22%);
+  --success-ultra-dark: hsl(133 61% 10%);
+  --success-hover: hsl(133 61% 33%);
+  --warning: hsl(45 100% 52%);
+  --warning-ultra-light: hsl(45 100% 95%);
+  --warning-light: hsl(45 100% 85%);
+  --warning-semi-light: hsl(45 100% 70%);
+  --warning-semi-dark: hsl(45 100% 35%);
+  --warning-dark: hsl(45 100% 22%);
+  --warning-ultra-dark: hsl(45 100% 10%);
+  --warning-hover: hsl(45 100% 44%);
+  --danger: hsl(354 71% 54%);
+  --danger-ultra-light: hsl(354 71% 95%);
+  --danger-light: hsl(354 71% 85%);
+  --danger-semi-light: hsl(354 71% 70%);
+  --danger-semi-dark: hsl(354 71% 35%);
+  --danger-dark: hsl(354 71% 22%);
+  --danger-ultra-dark: hsl(354 71% 10%);
+  --danger-hover: hsl(354 71% 46%);
+  --info: hsl(188 77% 41%);
+  --info-ultra-light: hsl(188 77% 95%);
+  --info-light: hsl(188 77% 85%);
+  --info-semi-light: hsl(188 77% 70%);
+  --info-semi-dark: hsl(188 77% 35%);
+  --info-dark: hsl(188 77% 22%);
+  --info-ultra-dark: hsl(188 77% 10%);
+  --info-hover: hsl(188 77% 33%);
+  --white: hsl(0 0% 100%);
+  --black: hsl(0 0% 0%);
+  --box-shadow-m: 0 1px 2px hsl(0 1% 15% / 0.06), 0 2px 6px hsl(0 1% 15% / 0.08);
+  --box-shadow-l: 0 4px 8px -2px hsl(0 1% 15% / 0.08), 0 12px 24px -6px hsl(0 1% 15% / 0.12);
+  --box-shadow-xl: 0 8px 16px -4px hsl(0 1% 15% / 0.10), 0 24px 48px -12px hsl(0 1% 15% / 0.18);
+  --radius-xs: 0.4rem;
+  --radius-s: 0.6rem;
+  --radius-m: 0.9rem;
+  --radius-l: 1.4rem;
+  --radius-xl: 2.0rem;
+  --radius-xxl: 3.0rem;
+  --radius-circle: 50%;
+}
+html { font-size: 62.5%; }
+* { box-sizing: border-box; }
+body { margin:0; background:#e9e9ec; font-family:"Plus Jakarta Sans",system-ui,sans-serif; color:var(--base); font-size:1.6rem; }
+.frame { width:1440px; margin:0 auto 80px; background:var(--white); padding:96px 120px; }
+.frame:first-child { margin-top:80px; }
+h1.page { font-size:5.6rem; line-height:1.1; margin:0 0 16px; font-weight:700; }
+.intro { max-width:760px; color:var(--neutral-semi-dark); line-height:1.5; margin:0 0 64px; }
+h2.sec { font-size:3.2rem; margin:72px 0 32px; padding-top:32px; border-top:1px solid var(--neutral-ultra-light); }
+.facts { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:48px; }
+.fact { background:var(--neutral-ultra-light); border-radius:var(--radius-m); padding:24px; }
+.fact small { display:block; color:var(--neutral-semi-dark); font-size:1.3rem; margin-bottom:6px; }
+.fact b { font-size:2rem; }
+.specimen { background:var(--neutral-ultra-light); border-radius:var(--radius-l); padding:40px; font-size:3.2rem; line-height:1.4; margin-bottom:48px; }
+.trow { display:grid; grid-template-columns:360px 1fr; gap:40px; align-items:center; padding:24px 0; border-bottom:1px solid var(--neutral-ultra-light); }
+.tmeta { display:flex; flex-direction:column; gap:4px; font-size:1.3rem; color:var(--neutral-semi-dark); }
+.tmeta b { color:var(--base); font-size:1.4rem; }
+.matrix { display:grid; grid-template-columns:repeat(6,1fr); gap:24px 16px; }
+.mcell small { color:var(--neutral-semi-dark); font-size:1.2rem; }
+.cgrid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+.ccard { border-radius:var(--radius-l); overflow:hidden; box-shadow:var(--box-shadow-m); border:1px solid var(--neutral-ultra-light); }
+.cbase { padding:28px; min-height:150px; display:flex; flex-direction:column; gap:6px; }
+.cname { font-size:2.4rem; font-weight:700; }
+.cvar { font-size:1.4rem; opacity:.85; }
+.cval { font-size:1.3rem; margin-top:auto; }
+.shades { display:grid; grid-template-columns:repeat(7,1fr); }
+.shade { padding:14px 10px; min-height:84px; display:flex; flex-direction:column; justify-content:space-between; font-size:1.2rem; }
+.shade span { font-weight:600; }
+.shade small { font-size:1.1rem; opacity:.85; }
+.bw { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:32px; }
+.bwc { border-radius:var(--radius-l); padding:28px; min-height:120px; border:1px solid var(--neutral-ultra-light); display:flex; flex-direction:column; gap:6px; }
+.srow { display:flex; align-items:center; gap:32px; padding:16px 0; border-bottom:1px solid var(--neutral-ultra-light); }
+.srow > div:last-child { display:flex; flex-direction:column; gap:4px; }
+.srow span, .shcard span, .rcell span { color:var(--neutral-semi-dark); font-size:1.3rem; }
+.sbar { background:var(--primary-light); border:1px solid var(--primary-semi-light); flex:none; }
+.shgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:48px; padding:16px; }
+.shcard { background:var(--white); border-radius:var(--radius-m); height:200px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; gap:4px; }
+.rgrid { display:grid; grid-template-columns:repeat(7,1fr); gap:24px; }
+.rcell { display:flex; flex-direction:column; gap:6px; }
+.rbox { width:120px; height:120px; background:var(--primary-ultra-light); border:2px solid var(--primary); margin-bottom:8px; }
+</style></head><body>
+
+<section class="frame" id="style-guide">
+<h1 class="page">Style guide</h1><p class="intro">Cette page décrit les styles et éléments du site. Couleurs en HSL, variables nommées selon AutomaticCSS (racine 62.5 %, 1rem = 10px).</p>
+<h2 class="sec" style="margin-top:0;border:0;padding:0">Typography</h2>
+<div class="facts">
+<div class="fact"><small>Base text size</small><b>16 – 18 px</b></div>
+<div class="fact"><small>Desktop scale</small><b>Perfect fourth (1.333)</b></div>
+<div class="fact"><small>Typeface</small><b>Plus Jakarta Sans</b></div>
+<div class="fact"><small>Root font size</small><b>62.5 % | 1rem = 10px</b></div>
+<div class="fact"><small>Mobile scale</small><b>Minor third (1.200)</b></div>
+<div class="fact"><small>Line height</small><b>Titres 120 % · Texte 150 %</b></div>
+</div>
+<div class="specimen">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG<br>The quick brown fox jumps over the lazy dog<br>1234567890!@#$%^&amp;*()</div>
+<h2 class="sec">Headings</h2><div class="trow"><div class="tmeta"><b>Font size: 42.6px / 4.26rem / Line height 120%</b><span>Variable: var(--text-xxl) / var(--h1)</span><span>Mobile 27.6px → Bureau 42.6px</span></div>
+<div class="tsample" style="font-size:4.263rem;line-height:1.2;font-weight:700">Heading 1</div></div><div class="trow"><div class="tmeta"><b>Font size: 32.0px / 3.2rem / Line height 120%</b><span>Variable: var(--text-xl) / var(--h2)</span><span>Mobile 23.0px → Bureau 32.0px</span></div>
+<div class="tsample" style="font-size:3.198rem;line-height:1.2;font-weight:700">Heading 2</div></div><div class="trow"><div class="tmeta"><b>Font size: 24.0px / 2.4rem / Line height 120%</b><span>Variable: var(--text-l) / var(--h3)</span><span>Mobile 19.2px → Bureau 24.0px</span></div>
+<div class="tsample" style="font-size:2.399rem;line-height:1.2;font-weight:700">Heading 3</div></div><div class="trow"><div class="tmeta"><b>Font size: 18.0px / 1.8rem / Line height 120%</b><span>Variable: var(--text-m) / var(--h4)</span><span>Mobile 16.0px → Bureau 18.0px</span></div>
+<div class="tsample" style="font-size:1.800rem;line-height:1.2;font-weight:700">Heading 4</div></div><div class="trow"><div class="tmeta"><b>Font size: 13.5px / 1.35rem / Line height 120%</b><span>Variable: var(--text-s) / var(--h5)</span><span>Mobile 13.3px → Bureau 13.5px</span></div>
+<div class="tsample" style="font-size:1.350rem;line-height:1.2;font-weight:700">Heading 5</div></div><div class="trow"><div class="tmeta"><b>Font size: 10.1px / 1.01rem / Line height 120%</b><span>Variable: var(--text-xs) / var(--h6)</span><span>Mobile 11.1px → Bureau 10.1px</span></div>
+<div class="tsample" style="font-size:1.013rem;line-height:1.2;font-weight:700">Heading 6</div></div>
+<h2 class="sec">Text sizes</h2><div class="trow"><div class="tmeta"><b>Font size: 42.6px / 4.26rem</b><span>Line height 150%</span><span>var(--text-xxl)</span></div>
+<div class="tsample" style="font-size:4.263rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div><div class="trow"><div class="tmeta"><b>Font size: 32.0px / 3.2rem</b><span>Line height 150%</span><span>var(--text-xl)</span></div>
+<div class="tsample" style="font-size:3.198rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div><div class="trow"><div class="tmeta"><b>Font size: 24.0px / 2.4rem</b><span>Line height 150%</span><span>var(--text-l)</span></div>
+<div class="tsample" style="font-size:2.399rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div><div class="trow"><div class="tmeta"><b>Font size: 18.0px / 1.8rem</b><span>Line height 150%</span><span>var(--text-m)</span></div>
+<div class="tsample" style="font-size:1.800rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div><div class="trow"><div class="tmeta"><b>Font size: 13.5px / 1.35rem</b><span>Line height 150%</span><span>var(--text-s)</span></div>
+<div class="tsample" style="font-size:1.350rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div><div class="trow"><div class="tmeta"><b>Font size: 10.1px / 1.01rem</b><span>Line height 150%</span><span>var(--text-xs)</span></div>
+<div class="tsample" style="font-size:1.013rem;line-height:1.5">The quick brown fox jumps over the lazy dog</div></div>
+<h2 class="sec">Font weights</h2><div class="matrix"><div class="mcell"><div style="font-size:4.263rem;font-weight:700;line-height:1.2">Text xxl</div><small>700</small></div><div class="mcell"><div style="font-size:3.198rem;font-weight:700;line-height:1.2">Text xl</div><small>700</small></div><div class="mcell"><div style="font-size:2.399rem;font-weight:700;line-height:1.2">Text l</div><small>700</small></div><div class="mcell"><div style="font-size:1.800rem;font-weight:700;line-height:1.2">Text m</div><small>700</small></div><div class="mcell"><div style="font-size:1.350rem;font-weight:700;line-height:1.2">Text s</div><small>700</small></div><div class="mcell"><div style="font-size:1.013rem;font-weight:700;line-height:1.2">Text xs</div><small>700</small></div><div class="mcell"><div style="font-size:4.263rem;font-weight:600;line-height:1.2">Text xxl</div><small>600</small></div><div class="mcell"><div style="font-size:3.198rem;font-weight:600;line-height:1.2">Text xl</div><small>600</small></div><div class="mcell"><div style="font-size:2.399rem;font-weight:600;line-height:1.2">Text l</div><small>600</small></div><div class="mcell"><div style="font-size:1.800rem;font-weight:600;line-height:1.2">Text m</div><small>600</small></div><div class="mcell"><div style="font-size:1.350rem;font-weight:600;line-height:1.2">Text s</div><small>600</small></div><div class="mcell"><div style="font-size:1.013rem;font-weight:600;line-height:1.2">Text xs</div><small>600</small></div><div class="mcell"><div style="font-size:4.263rem;font-weight:500;line-height:1.2">Text xxl</div><small>500</small></div><div class="mcell"><div style="font-size:3.198rem;font-weight:500;line-height:1.2">Text xl</div><small>500</small></div><div class="mcell"><div style="font-size:2.399rem;font-weight:500;line-height:1.2">Text l</div><small>500</small></div><div class="mcell"><div style="font-size:1.800rem;font-weight:500;line-height:1.2">Text m</div><small>500</small></div><div class="mcell"><div style="font-size:1.350rem;font-weight:500;line-height:1.2">Text s</div><small>500</small></div><div class="mcell"><div style="font-size:1.013rem;font-weight:500;line-height:1.2">Text xs</div><small>500</small></div><div class="mcell"><div style="font-size:4.263rem;font-weight:400;line-height:1.2">Text xxl</div><small>400</small></div><div class="mcell"><div style="font-size:3.198rem;font-weight:400;line-height:1.2">Text xl</div><small>400</small></div><div class="mcell"><div style="font-size:2.399rem;font-weight:400;line-height:1.2">Text l</div><small>400</small></div><div class="mcell"><div style="font-size:1.800rem;font-weight:400;line-height:1.2">Text m</div><small>400</small></div><div class="mcell"><div style="font-size:1.350rem;font-weight:400;line-height:1.2">Text s</div><small>400</small></div><div class="mcell"><div style="font-size:1.013rem;font-weight:400;line-height:1.2">Text xs</div><small>400</small></div><div class="mcell"><div style="font-size:4.263rem;font-weight:300;line-height:1.2">Text xxl</div><small>300</small></div><div class="mcell"><div style="font-size:3.198rem;font-weight:300;line-height:1.2">Text xl</div><small>300</small></div><div class="mcell"><div style="font-size:2.399rem;font-weight:300;line-height:1.2">Text l</div><small>300</small></div><div class="mcell"><div style="font-size:1.800rem;font-weight:300;line-height:1.2">Text m</div><small>300</small></div><div class="mcell"><div style="font-size:1.350rem;font-weight:300;line-height:1.2">Text s</div><small>300</small></div><div class="mcell"><div style="font-size:1.013rem;font-weight:300;line-height:1.2">Text xs</div><small>300</small></div></div>
+</section>
+
+<section class="frame" id="color-palette">
+<h1 class="page">Color palette</h1><p class="intro">Cette page décrit les styles et éléments du site. Couleurs en HSL, variables nommées selon AutomaticCSS (racine 62.5 %, 1rem = 10px).</p>
+<h2 class="sec" style="margin-top:0;border:0;padding:0">Brand</h2>
+<div class="cgrid"><div class="ccard"><div class="cbase" style="background:var(--primary);color:#fff">
+<div class="cname">Primary</div><div class="cvar">var(--primary)</div>
+<div class="cval">HSL: 211°, 66%, 40% &nbsp;|&nbsp; HEX: #2364A9</div></div><div class="shades"><div class="shade" style="background:var(--primary-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#EAF2FB</small></div><div class="shade" style="background:var(--primary-light);color:var(--base)"><span>Light</span><small>#C0D8F2</small></div><div class="shade" style="background:var(--primary-semi-light);color:var(--base)"><span>Semi Light</span><small>#80B1E5</small></div><div class="shade" style="background:var(--primary-semi-dark);color:#fff"><span>Semi Dark</span><small>#1E5794</small></div><div class="shade" style="background:var(--primary-dark);color:#fff"><span>Dark</span><small>#13375D</small></div><div class="shade" style="background:var(--primary-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#09192A</small></div><div class="shade" style="background:var(--primary-hover);color:#fff"><span>Hover</span><small>#1C5087</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--secondary);color:var(--base)">
+<div class="cname">Secondary</div><div class="cvar">var(--secondary)</div>
+<div class="cval">HSL: 200°, 67%, 55% &nbsp;|&nbsp; HEX: #3FA6D9</div></div><div class="shades"><div class="shade" style="background:var(--secondary-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#EAF5FB</small></div><div class="shade" style="background:var(--secondary-light);color:var(--base)"><span>Light</span><small>#BFE1F2</small></div><div class="shade" style="background:var(--secondary-semi-light);color:var(--base)"><span>Semi Light</span><small>#7FC4E6</small></div><div class="shade" style="background:var(--secondary-semi-dark);color:#fff"><span>Semi Dark</span><small>#1D6D95</small></div><div class="shade" style="background:var(--secondary-dark);color:#fff"><span>Dark</span><small>#13455E</small></div><div class="shade" style="background:var(--secondary-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#081F2B</small></div><div class="shade" style="background:var(--secondary-hover);color:var(--base)"><span>Hover</span><small>#2893C8</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--tertiary);color:var(--base)">
+<div class="cname">Tertiary</div><div class="cvar">var(--tertiary)</div>
+<div class="cval">HSL: 47°, 99%, 50% &nbsp;|&nbsp; HEX: #FEC701</div></div><div class="shades"><div class="shade" style="background:var(--tertiary-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#FFF9E6</small></div><div class="shade" style="background:var(--tertiary-light);color:var(--base)"><span>Light</span><small>#FFEEB3</small></div><div class="shade" style="background:var(--tertiary-semi-light);color:var(--base)"><span>Semi Light</span><small>#FEDD67</small></div><div class="shade" style="background:var(--tertiary-semi-dark);color:var(--base)"><span>Semi Dark</span><small>#B28B01</small></div><div class="shade" style="background:var(--tertiary-dark);color:#fff"><span>Dark</span><small>#705801</small></div><div class="shade" style="background:var(--tertiary-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#332800</small></div><div class="shade" style="background:var(--tertiary-hover);color:var(--base)"><span>Hover</span><small>#D5A701</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--accent);color:var(--base)">
+<div class="cname">Accent</div><div class="cvar">var(--accent)</div>
+<div class="cval">HSL: 334°, 100%, 82% &nbsp;|&nbsp; HEX: #FFA3CB</div></div><div class="shades"><div class="shade" style="background:var(--accent-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#FFE5F1</small></div><div class="shade" style="background:var(--accent-light);color:var(--base)"><span>Light</span><small>#FFB2D4</small></div><div class="shade" style="background:var(--accent-semi-light);color:var(--base)"><span>Semi Light</span><small>#FF66A8</small></div><div class="shade" style="background:var(--accent-semi-dark);color:#fff"><span>Semi Dark</span><small>#B2004D</small></div><div class="shade" style="background:var(--accent-dark);color:#fff"><span>Dark</span><small>#700031</small></div><div class="shade" style="background:var(--accent-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#330016</small></div><div class="shade" style="background:var(--accent-hover);color:var(--base)"><span>Hover</span><small>#FF7AB4</small></div></div></div></div>
+<h2 class="sec">Base &amp; neutral</h2>
+<div class="cgrid"><div class="ccard"><div class="cbase" style="background:var(--base);color:#fff">
+<div class="cname">Base</div><div class="cvar">var(--base)</div>
+<div class="cval">HSL: 0°, 1%, 15% &nbsp;|&nbsp; HEX: #272626</div></div><div class="shades"><div class="shade" style="background:var(--base-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#F2F2F2</small></div><div class="shade" style="background:var(--base-light);color:var(--base)"><span>Light</span><small>#D9D8D8</small></div><div class="shade" style="background:var(--base-semi-light);color:var(--base)"><span>Semi Light</span><small>#B3B2B2</small></div><div class="shade" style="background:var(--base-semi-dark);color:#fff"><span>Semi Dark</span><small>#5A5858</small></div><div class="shade" style="background:var(--base-dark);color:#fff"><span>Dark</span><small>#393838</small></div><div class="shade" style="background:var(--base-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#1A1919</small></div><div class="shade" style="background:var(--base-hover);color:#fff"><span>Hover</span><small>#3B3A3A</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--neutral);color:#fff">
+<div class="cname">Neutral</div><div class="cvar">var(--neutral)</div>
+<div class="cval">HSL: 0°, 0%, 9% &nbsp;|&nbsp; HEX: #171717</div></div><div class="shades"><div class="shade" style="background:var(--neutral-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#F2F2F2</small></div><div class="shade" style="background:var(--neutral-light);color:var(--base)"><span>Light</span><small>#D9D9D9</small></div><div class="shade" style="background:var(--neutral-semi-light);color:var(--base)"><span>Semi Light</span><small>#B2B2B2</small></div><div class="shade" style="background:var(--neutral-semi-dark);color:#fff"><span>Semi Dark</span><small>#595959</small></div><div class="shade" style="background:var(--neutral-dark);color:#fff"><span>Dark</span><small>#383838</small></div><div class="shade" style="background:var(--neutral-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#1A1A1A</small></div><div class="shade" style="background:var(--neutral-hover);color:#fff"><span>Hover</span><small>#2B2B2B</small></div></div></div></div>
+<div class="bw">
+<div class="bwc" style="background:var(--white)"><b style="font-size:2.4rem">White</b><span>var(--white)</span><span>HSL: 0°, 0%, 100% | HEX: #FFFFFF</span></div>
+<div class="bwc" style="background:var(--black);color:#fff"><b style="font-size:2.4rem">Black</b><span>var(--black)</span><span>HSL: 0°, 0%, 0% | HEX: #000000</span></div>
+</div>
+<h2 class="sec">States</h2>
+<div class="cgrid"><div class="ccard"><div class="cbase" style="background:var(--success);color:var(--base)">
+<div class="cname">Success</div><div class="cvar">var(--success)</div>
+<div class="cval">HSL: 133°, 61%, 41% &nbsp;|&nbsp; HEX: #29A844</div></div><div class="shades"><div class="shade" style="background:var(--success-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#EAFAEE</small></div><div class="shade" style="background:var(--success-light);color:var(--base)"><span>Light</span><small>#C1F0CC</small></div><div class="shade" style="background:var(--success-semi-light);color:var(--base)"><span>Semi Light</span><small>#84E198</small></div><div class="shade" style="background:var(--success-semi-dark);color:var(--base)"><span>Semi Dark</span><small>#23903A</small></div><div class="shade" style="background:var(--success-dark);color:#fff"><span>Dark</span><small>#165A25</small></div><div class="shade" style="background:var(--success-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#0A2911</small></div><div class="shade" style="background:var(--success-hover);color:#fff"><span>Hover</span><small>#218737</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--warning);color:var(--base)">
+<div class="cname">Warning</div><div class="cvar">var(--warning)</div>
+<div class="cval">HSL: 45°, 100%, 52% &nbsp;|&nbsp; HEX: #FFC20A</div></div><div class="shades"><div class="shade" style="background:var(--warning-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#FFF9E5</small></div><div class="shade" style="background:var(--warning-light);color:var(--base)"><span>Light</span><small>#FFECB2</small></div><div class="shade" style="background:var(--warning-semi-light);color:var(--base)"><span>Semi Light</span><small>#FFD966</small></div><div class="shade" style="background:var(--warning-semi-dark);color:var(--base)"><span>Semi Dark</span><small>#B28600</small></div><div class="shade" style="background:var(--warning-dark);color:#fff"><span>Dark</span><small>#705400</small></div><div class="shade" style="background:var(--warning-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#332600</small></div><div class="shade" style="background:var(--warning-hover);color:var(--base)"><span>Hover</span><small>#E0A800</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--danger);color:var(--base)">
+<div class="cname">Danger</div><div class="cvar">var(--danger)</div>
+<div class="cval">HSL: 354°, 71%, 54% &nbsp;|&nbsp; HEX: #DD3647</div></div><div class="shades"><div class="shade" style="background:var(--danger-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#FBE9EB</small></div><div class="shade" style="background:var(--danger-light);color:var(--base)"><span>Light</span><small>#F4BEC3</small></div><div class="shade" style="background:var(--danger-semi-light);color:var(--base)"><span>Semi Light</span><small>#E97C87</small></div><div class="shade" style="background:var(--danger-semi-dark);color:#fff"><span>Semi Dark</span><small>#991A27</small></div><div class="shade" style="background:var(--danger-dark);color:#fff"><span>Dark</span><small>#601018</small></div><div class="shade" style="background:var(--danger-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#2C070B</small></div><div class="shade" style="background:var(--danger-hover);color:#fff"><span>Hover</span><small>#C92233</small></div></div></div><div class="ccard"><div class="cbase" style="background:var(--info);color:var(--base)">
+<div class="cname">Info</div><div class="cvar">var(--info)</div>
+<div class="cval">HSL: 188°, 77%, 41% &nbsp;|&nbsp; HEX: #18A4B9</div></div><div class="shades"><div class="shade" style="background:var(--info-ultra-light);color:var(--base)"><span>Ultra Light</span><small>#E8F9FC</small></div><div class="shade" style="background:var(--info-light);color:var(--base)"><span>Light</span><small>#BBEEF6</small></div><div class="shade" style="background:var(--info-semi-light);color:var(--base)"><span>Semi Light</span><small>#78DEED</small></div><div class="shade" style="background:var(--info-semi-dark);color:var(--base)"><span>Semi Dark</span><small>#158C9E</small></div><div class="shade" style="background:var(--info-dark);color:#fff"><span>Dark</span><small>#0D5863</small></div><div class="shade" style="background:var(--info-ultra-dark);color:#fff"><span>Ultra Dark</span><small>#06282D</small></div><div class="shade" style="background:var(--info-hover);color:var(--base)"><span>Hover</span><small>#138495</small></div></div></div></div>
+<h2 class="sec">Spacing</h2><div class="srow"><div class="sbar" style="width:13.33px;height:13.33px"></div><div><b>Space XS - 13.33 px</b><span>var(--space-xs) · mobile 12.4 px</span></div></div><div class="srow"><div class="sbar" style="width:20.00px;height:20.00px"></div><div><b>Space S - 20 px</b><span>var(--space-s) · mobile 16.5 px</span></div></div><div class="srow"><div class="sbar" style="width:30.00px;height:30.00px"></div><div><b>Space M - 30 px</b><span>var(--space-m) · mobile 22.0 px</span></div></div><div class="srow"><div class="sbar" style="width:45.00px;height:45.00px"></div><div><b>Space L - 45 px</b><span>var(--space-l) · mobile 29.3 px</span></div></div><div class="srow"><div class="sbar" style="width:67.50px;height:67.50px"></div><div><b>Space XL - 67.5 px</b><span>var(--space-xl) · mobile 39.1 px</span></div></div><div class="srow"><div class="sbar" style="width:101.25px;height:101.25px"></div><div><b>Space XXL - 101.25 px</b><span>var(--space-xxl) · mobile 52.1 px</span></div></div>
+<h2 class="sec">Shadow boxes</h2><div class="shgrid"><div class="shcard" style="box-shadow:var(--box-shadow-m)"><b>Box shadow m</b><span>var(--box-shadow-m)</span></div><div class="shcard" style="box-shadow:var(--box-shadow-l)"><b>Box shadow l</b><span>var(--box-shadow-l)</span></div><div class="shcard" style="box-shadow:var(--box-shadow-xl)"><b>Box shadow xl</b><span>var(--box-shadow-xl)</span></div></div>
+<h2 class="sec">Border radius</h2><div class="rgrid"><div class="rcell"><div class="rbox" style="border-radius:var(--radius-xs)"></div><b>Border radius XS</b><span>4px · var(--radius-xs)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-s)"></div><b>Border radius S</b><span>6px · var(--radius-s)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-m)"></div><b>Border radius M</b><span>9px · var(--radius-m)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-l)"></div><b>Border radius L</b><span>14px · var(--radius-l)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-xl)"></div><b>Border radius XL</b><span>20px · var(--radius-xl)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-xxl)"></div><b>Border radius XXL</b><span>30px · var(--radius-xxl)</span></div><div class="rcell"><div class="rbox" style="border-radius:var(--radius-circle)"></div><b>Border radius Circle</b><span>50% · var(--radius-circle)</span></div></div>
+</section>
+</body></html>
